@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "coinflip",
+  "version": "${version}",
+  "name": "CoinFlipAI",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/Skylandia/CoinFlipAI"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/CoinFlipAI/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.skylandia.coinflipai.CoinFlip"
+    ]
+  },
+  "mixins": [
+    "coinflipai.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
